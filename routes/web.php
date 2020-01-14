@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+// vi cac router dung o vue route roi
+Route::get('/{any}', 'VueController@index')->where('any', '.*');
